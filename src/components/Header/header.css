@@ -1,0 +1,6 @@
+.header-wrapper {
+  width: 100vw;
+  height: 35vh;
+  background: url(../../images/banner3.jpg) no-repeat 0px -260px;
+  background-size: cover;
+}
