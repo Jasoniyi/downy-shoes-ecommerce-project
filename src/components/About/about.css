@@ -1,0 +1,188 @@
+.nav {
+  position: relative;
+  top: -2em;
+  color: #fff;
+}
+.nav h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 0 0 4em;
+  letter-spacing: 1px;
+}
+
+.nav span {
+  color: #fb383b;
+  padding: 0 1em;
+}
+
+.nav i {
+  padding: 0 1em;
+  font-style: normal;
+}
+
+.about-label {
+  text-align: center;
+}
+
+.about-label h2 {
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.13) 2px 2px 3px;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+.about-label p {
+  color: #999;
+  letter-spacing: 5px;
+  font-size: 0.85em;
+}
+
+.shoes-wrapper {
+  height: 60vh;
+  margin-top: 3em;
+}
+
+.shoes-img {
+  background: url(../../images/ab.jpg);
+  background-size: cover;
+  height: 60vh;
+}
+
+.shoes-text h3 {
+  font-weight: 700;
+  color: #505050;
+  font-size: 2em;
+}
+
+.shoes-text p {
+  margin: 1.2em 0;
+  line-height: 1.9em;
+  color: #888;
+}
+
+.about-us {
+  height: 80vh;
+  background-color: rgba(245, 245, 220, 0.5);
+  margin-top: 1em;
+}
+
+.about-us-left {
+  height: 50vh;
+  margin-left: 4em;
+}
+
+.about-us-left h4,
+.about-us-right h4 {
+  font-size: 1.7em;
+  color: #111111;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1.4em 0;
+}
+
+.about-us-right {
+  background: url(../../images/banner2.jpg) no-repeat -130px 0;
+  height: 80vh;
+}
+
+.about-us-right h4 {
+  color: #fff;
+  padding: 1.4em 4em;
+}
+
+/*-- /skills --*/
+.bar-grids {
+  padding: 6em 5em;
+}
+
+.bargrids-left {
+  margin-right: 40px;
+}
+.bar-grids h4 {
+  font-size: 0.9em;
+  color: #ffffff;
+  margin-bottom: 0.6em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.bar-grids h4 span.fa {
+  margin-right: 0.8em;
+  color: #ecb731;
+}
+.skill_info {
+  width: 70%;
+  margin-left: 6em;
+  color: #fff;
+}
+.progress {
+  height: 6px;
+  margin-bottom: 2.2em;
+  background-color: #dadde0;
+  border-radius: 11px;
+}
+
+.prgs-last {
+  margin-bottom: 0 !important;
+}
+
+.progress-bar {
+  background-color: #0c0c0c;
+}
+
+.bar-grids h6 {
+  font-size: 1em;
+  color: #ffffff;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.bar-grids h6 span {
+  float: right;
+  font-size: 1em;
+}
+
+.progress-striped .progress-bar,
+.progress-bar-striped {
+  background-image: none !important;
+}
+
+/*-- //skills --*/
+
+@media (max-width: 999px) {
+  .about-carousel-wrapper {
+    margin-top: 3.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoes-wrapper {
+    height: 125vh;
+  }
+  .about-us {
+    height: 160vh;
+  }
+
+  .about-us-left {
+    height: 80vh;
+  }
+
+  .about-carousel-wrapper {
+    position: relative;
+    top: -25em;
+  }
+}
+
+@media (max-width: 375px) {
+  .shoes-wrapper {
+    height: 170vh;
+  }
+
+  .skill_info {
+    margin-left: 3.5em;
+  }
+}

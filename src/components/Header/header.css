@@ -4,3 +4,10 @@
   background: url(../../images/banner3.jpg) no-repeat 0px -260px;
   background-size: cover;
 }
+
+@media (max-width: 999px) {
+  .header-wrapper {
+    background: url(../../images/banner3.jpg);
+    background-position: center;
+  }
+}
