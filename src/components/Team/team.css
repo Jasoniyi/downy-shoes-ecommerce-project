@@ -1,0 +1,70 @@
+.team-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.team-wrapper h3 {
+  font-size: 12em;
+  color: #333;
+  font-weight: 700;
+}
+
+.team-wrapper p {
+  color: #848080;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 1em 0 2em 0;
+}
+
+.team-wrapper input[type="search"] {
+  outline: none;
+  border: 1px solid #c4c5c5;
+  background: none;
+  color: #212121;
+  padding: 11px 15px;
+  width: 40%;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.submit-btn {
+  color: #fff;
+  border: none;
+  padding: 13px 0;
+  text-align: center;
+  text-decoration: none;
+  background: #fb383b;
+  transition: 0.5s all;
+  width: 5%;
+}
+
+.return-home {
+  background: #0c0c0c;
+  padding: 0.7em 1.5em;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 2em 0 1em 0;
+  outline: 0;
+  border: 0;
+}
+
+.return-home a {
+  color: #fff;
+}
+
+.return-home a:hover {
+  cursor: pointer;
+  color: #fb383b;
+}
+
+@media (max-width: 441px) {
+  .team-wrapper h3 {
+    font-size: 6em;
+  }
+
+  .team-wrapper p {
+    font-size: 0.6em;
+  }
+}
