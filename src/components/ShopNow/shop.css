@@ -1,0 +1,178 @@
+.shop-wrapper {
+  margin-top: 2em;
+  padding: 0 4em;
+}
+/* ----------------- shop left ------ */
+.shop-left {
+  border: 1px solid #e4e4e4;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-left h5 {
+  font-weight: 600;
+  padding-top: 1em;
+  font-size: 1.2em;
+}
+
+.shop-left input[type="search"] {
+  width: 70%;
+  background: #f5f5f5;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #c4c4c4;
+  letter-spacing: 1px;
+}
+
+.search-products-btn {
+  background-color: #151414;
+  width: 44px;
+  height: 39px;
+  border: none;
+  padding: 0;
+  margin-top: 0;
+  color: #fff;
+}
+
+.price-range {
+  border: 1px solid #e4e4e4;
+  padding: 20px 20px;
+}
+
+.occasion-wrapper,
+.discount-items-wrapper,
+.customer-review-wrapper,
+.special-deals-wrapper {
+  padding-top: 2em;
+}
+
+.occasion-wrapper h4,
+.discount-items-wrapper h4,
+.customer-review-wrapper h4,
+.special-deals-wrapper h4 {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.occasion-wrapper ul,
+.discount-items-wrapper ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.occasion-wrapper ul li,
+.discount-items-wrapper ul li {
+  margin-bottom: 5px;
+}
+
+.occasion-wrapper ul li span,
+.discount-items-wrapper ul li span {
+  font-size: 15px;
+  color: #000;
+  letter-spacing: 1px;
+  margin-left: 13px;
+  vertical-align: top;
+}
+
+.customer-review-wrapper ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.customer-review-wrapper ul li i {
+  color: #f0d806;
+  font-size: 0.8em;
+}
+
+.customer-review-wrapper ul li span {
+  margin-left: 0.6em;
+}
+
+/* ----------------- SPECIAL DEALS COMPONENT ------ */
+.product-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0.4em 1em;
+}
+
+.pdct-img {
+  width: 20%;
+  height: 3em;
+  border-right: 1px solid #e4e4e4;
+}
+
+.pdct-text {
+  width: 50%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdct-name {
+  color: #080808;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.pdct-price {
+  font-size: 14px;
+  color: #6d6c6c;
+}
+
+/* ----------------- shop right ------ */
+.shop-right {
+  border: 1px solid #e4e4e4;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.discounted-products {
+  background-color: aqua;
+  /* padding: 0.6em 1em; */
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.discount-left {
+  background: url(../../images/banner3.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+}
+
+.discount-right {
+  background: url(../../images/banner2.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.discount-left h4,
+.discount-right h4 {
+  color: #fff;
+  padding: 3.5em 1em;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.product-catalog {
+  padding-top: 2em;
+}
+
+/* responsive */
+@media (max-width: 999px) {
+  .discounted-products {
+    display: flex;
+    flex-direction: column;
+    height: 62vh;
+  }
+}
+
+@media (max-width: 745px) {
+  .discounted-products {
+  }
+}
