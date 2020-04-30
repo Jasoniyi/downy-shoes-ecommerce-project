@@ -43,9 +43,9 @@ const DisplayProducts = ({ items, total, addToCart }) => {
             </div>
             <div className="modal-footer">
               <p>Sub-total:N{total}</p>
-              <button>
-                <Link to="/checkout">checkout</Link>
-              </button>
+              <Link to="/checkout">
+                <button>checkout</button>
+              </Link>
             </div>
           </div>
         </Fade>

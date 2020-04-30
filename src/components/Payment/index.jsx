@@ -4,6 +4,10 @@ import { Tabs } from "@yazanaabed/react-tabs";
 import "./payment.css";
 import Paypal from "../../images/paypal.png";
 
+import CreditCard from "./CreditCard";
+import CatalogCarousel from "../Home/Catalog/catalogCarousel";
+import Newsletter from "../Home/Newsletter";
+
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "left",
@@ -30,7 +34,9 @@ const Index = () => {
               </div>
             </Tabs.Tab>
             <Tabs.Tab id="tab2" title="CREDIT/DEBIT">
-              <div className="tab-body">This is tab 2</div>
+              <div className="tab-body">
+                <CreditCard />
+              </div>
             </Tabs.Tab>
             <Tabs.Tab id="tab3" title="NET BANKING">
               <div className="tab-body">
@@ -175,6 +181,8 @@ const Index = () => {
           </Tabs>
         </div>
       </div>
+      <CatalogCarousel />
+      <Newsletter />
     </div>
   );
 };

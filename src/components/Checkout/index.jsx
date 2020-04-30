@@ -8,6 +8,8 @@ import { Table } from "react-bootstrap";
 import CatalogCarousel from "../Home/Catalog/catalogCarousel";
 import Newsletter from "../Home/Newsletter";
 
+import { Link } from "react-router-dom";
+
 import "./checkout.css";
 
 const Index = ({ items, removeItem, total }) => {
@@ -131,8 +133,9 @@ const Index = ({ items, removeItem, total }) => {
                     Delivery to this address
                   </button>
                 </form>
-
-                <button className="payment-btn">make a payment</button>
+                <Link to="/payment">
+                  <button className="payment-btn">make a payment</button>
+                </Link>
               </div>
             </div>
           </div>
