@@ -70,8 +70,87 @@ ul.stars li:hover {
   border: 0;
 }
 
+.cart button:hover {
+  background-color: #fb383b;
+}
+
 .cart i {
   font-size: 1.3em;
   color: #fff;
   text-align: center;
+}
+
+/* hover on image */
+
+.men-cart-pro {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: all 0.5s ease-out 0s;
+  visibility: hidden;
+  height: 40%;
+}
+.inner-men-cart-pro {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  transition: all 0.5s ease-out 0s;
+}
+
+.link-product-add-cart {
+  background: #0c0c0c;
+  color: #fff;
+  display: inline-block;
+  height: 37px;
+  line-height: 37px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out 0s;
+  font-size: 0.9em;
+}
+
+.card-image:hover {
+  cursor: pointer;
+}
+
+.card-image:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-image:hover .men-cart-pro {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-image:hover .inner-men-cart-pro ul {
+  margin: 20px 0 0;
+}
+
+.inner-men-cart-pro ul li a:hover {
+  background: #ffc229 none repeat scroll 0 0;
+}
+
+.inner-men-cart-pro .link-product-add-cart {
+  width: 51%;
+  top: 0px;
+  left: 25%;
+  margin: 0 auto;
+  position: absolute;
+  transition: all 0.5s ease-out 0s;
+}
+
+.card-image:hover .inner-men-cart-pro .link-product-add-cart {
+  top: 49%;
+}
+
+.link-product-add-cart:hover {
+  background: #fb383b;
+  color: #fff;
+  text-decoration: none;
 }

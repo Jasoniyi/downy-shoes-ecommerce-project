@@ -42,12 +42,23 @@ const cartReducer = (state = initialState, action) => {
       let newItems = state.addedItems.filter((item) => action.id !== item.id);
 
       //calculating total
-      let newTotal = state.total - itemToRemove.price * newItems.quantity;
+      newItems.quantity = 1;
+      let newTotal = state.total - itemToRemove.price * itemToRemove.quantity;
       console.log("added removed", itemToRemove);
       return {
         ...state,
         addedItems: newItems,
         total: newTotal,
+      };
+
+    //add total of items
+    case ADD_QUANTITY:
+      let toAddedItems = state.items.find((item) => item.id === action.id);
+      toAddedItems.quantity += 1;
+      let newAddedTotal = state.total + toAddedItems.price;
+      return {
+        ...state,
+        total: newAddedTotal,
       };
 
     //default

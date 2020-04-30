@@ -79,6 +79,17 @@
   transition: border linear 0.2s, box-shadow linear 0.2s;
 }
 
+.increase-quantity {
+  color: #fb383b;
+  position: relative;
+  right: 4.2em;
+}
+
+.decrease-quantity {
+  color: #fb383b;
+  padding-left: 5px;
+}
+
 .cart-details-remove button {
   background-color: #fb383b;
   color: #fff;

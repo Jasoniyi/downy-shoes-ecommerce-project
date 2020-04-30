@@ -9,16 +9,14 @@ import Fade from "react-reveal/Fade";
 import { connect } from "react-redux";
 import { addToCart } from "./Action/cartActions";
 
-const DisplayProducts = ({ items, addToCart }) => {
+import { Link } from "react-router-dom";
+
+const DisplayProducts = ({ items, total, addToCart }) => {
   const [modal, setModal] = useState(false);
 
   const handleClick = (id) => {
     setModal(true);
     addToCart(id);
-  };
-
-  const openModal = () => {
-    setModal(true);
   };
 
   const closeModal = () => {
@@ -44,8 +42,10 @@ const DisplayProducts = ({ items, addToCart }) => {
               <Cart />
             </div>
             <div className="modal-footer">
-              <p>Sub-total:</p>
-              <button>checkout</button>
+              <p>Sub-total:N{total}</p>
+              <button>
+                <Link to="/checkout">checkout</Link>
+              </button>
             </div>
           </div>
         </Fade>
@@ -65,12 +65,26 @@ const DisplayProducts = ({ items, addToCart }) => {
               </span>
               <div className="card-image">
                 <img src={item.image} alt="dads" width="95%" />
+                <div className="men-cart-pro">
+                  <div className="inner-men-cart-pro">
+                    <Link
+                      to={{
+                        pathname: `/item/${item.id}`,
+                        state: { item },
+                      }}
+                      className="link-product-add-cart"
+                    >
+                      {" "}
+                      Quick View
+                    </Link>
+                  </div>
+                </div>
                 <span className="card-title pdct-title">{item.name}</span>
               </div>
               <div className="card-content">
                 <div className="buy-pdct">
                   <div className="price">
-                    <p>{item.price}</p>
+                    <p>N{item.price}.00</p>
                     <ul class="stars">
                       <li>
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -107,6 +121,7 @@ const DisplayProducts = ({ items, addToCart }) => {
 const mapStateToProps = (state) => {
   return {
     items: state.items,
+    total: state.total,
   };
 };
 
